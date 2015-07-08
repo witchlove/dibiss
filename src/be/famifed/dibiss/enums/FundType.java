@@ -1,0 +1,4 @@
+package be.famifed.dibiss.enums;
+public enum FundType {
+    CHILD_ALLOWANCE_FUND, SOCIAL_INSURANCE_FUND, FOREIGN_CHILD_ALLOWANCE_FUND, PUBLIC_INSTITUTION, MINISTRY
+}

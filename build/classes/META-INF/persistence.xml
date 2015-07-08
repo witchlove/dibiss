@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="DibissGenerator" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>be.famifed.dibiss.FileTO</class>
+		<class>be.famifed.dibiss.FileOnwerTO</class>
+		<class>be.famifed.dibiss.ChildTo</class>
+		<class>be.famifed.dibiss.BeneficiaryTO</class>
+		<class>be.famifed.dibiss.FictitiousChildTO</class>
+		<class>be.famifed.dibiss.ActorTO</class>
+		<class>be.famifed.dibiss.BondBeneficiaryToBeneficiaryTO</class>
+		<class>be.famifed.dibiss.MonthTO</class>
+		<class>be.famifed.dibiss.InssTO</class>
+		<class>be.famifed.dibiss.PaymentMethodTO</class>
+		<class>be.famifed.dibiss.AddressTO</class>
+		<class>be.famifed.dibiss.FourthActorTO</class>
+		<class>be.famifed.dibiss.ChildLegalSituationTO</class>
+		<class>be.famifed.dibiss.LegalGroundTO</class>
+		<class>be.famifed.dibiss.ChildDisabilityTO</class>
+		<class>be.famifed.dibiss.ChildDisOldSysTO</class>
+		<class>be.famifed.dibiss.ChildDisNewSysTO</class>
+		<class>be.famifed.dibiss.MonoParentalSituationTO</class>
+		<class>be.famifed.dibiss.ChildBeneficiaryLinkTO</class>
+		<class>be.famifed.dibiss.AssimilationTO</class>
+		<class>be.famifed.dibiss.ChildLinkTo</class>
+		<class>be.famifed.dibiss.ChildInstitutionLinkTO</class>
+		<class>be.famifed.dibiss.ChildFosterHomeLinkTO</class>
+		<class>be.famifed.dibiss.BondActorTO</class>
+		<class>be.famifed.dibiss.FundTO</class>
+		<class>be.famifed.dibiss.FictitiousChildBeneficiaryLinkTO</class>
+
+		<properties>
+			<property name="eclipselink.target-server" value="None" />
+			<property name="eclipselink.ddl-generation.output-mode" value="both" /> 
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+			<property name="eclipselink.jdbc.user" value="DIBISS"/>
+			<property name="eclipselink.jdbc.password" value="DIBISS"/>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+			<property name="javax.persistence.target-database" value="Oracle"/>
+		</properties>
+	</persistence-unit>
+</persistence>
